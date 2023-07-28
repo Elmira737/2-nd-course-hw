@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+button {
+    font-family: "Montserrat", sans-serif;
+}
+
+.center {
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
+}
+
+.top {
+    height: 1024px;
+    background-image: url(img/back.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.title {
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    color: #FFF;
+    padding-top: 217px;
+    padding-bottom: 32px;
+    white-space: pre-line;
+}
+
+.top__text {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 32px;
+    color: #FFF;
+    padding-bottom: 44px;
+    white-space: pre-line;
+}
+
+.top__text_weight {
+    font-weight: 700;
+}
+
+.top__button {
+    background: #9C0332;
+    border: none;
+    border-radius: 30px;
+    box-sizing: border-box;
+    width: 234px;
+    height: 48px;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: #FFF;
+}
+
+.game-box {
+    background: #000915;
+}
+
+.game {
+    padding-top: 128px;
+    padding-bottom: 128px;
+    display: grid;
+    gap: 32px;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.game__item {
+    position: relative;
+    height: 300px;
+    grid-column: span 4;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32px;
+    color: #FFF;
+}
+
+.game__img {
+    border-radius: 16px;
+}
+
+.game__heading {
+    position: absolute;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32px;
+    color: #FFF;
+    bottom: 0;
+    margin-left: 32px;
+    margin-bottom: 32px;
+}
