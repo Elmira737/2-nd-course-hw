@@ -11,3 +11,11 @@ while (n < 6) {
     console.log(n);
     n++;
 }
+
+let f = 7;
+
+while (f < 23) {
+    console.log(f);
+    f++;
+}
+
