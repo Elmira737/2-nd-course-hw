@@ -39,3 +39,10 @@ while (n > 50) {
 
 console.log(n);
 console.log(num);
+
+let dayNumber = 5;
+
+do {
+    console.log(`Сегодня пятница, ${dayNumber}-е число. Необходимо подготовить отчет.`);
+    dayNumber += 7;
+} while (dayNumber <= 31);
