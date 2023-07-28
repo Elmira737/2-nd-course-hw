@@ -28,3 +28,14 @@ let obj = {
 for (let salary in obj) {
     console.log(`${salary} - зарплата ${obj[salary]} долларов`);
 }
+
+n = 1000;
+num = 0;
+
+while (n > 50) {
+    n /= 2;
+    num++;
+}
+
+console.log(n);
+console.log(num);
