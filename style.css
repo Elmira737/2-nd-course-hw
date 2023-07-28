@@ -61,6 +61,11 @@ button {
     font-weight: 400;
     line-height: normal;
     color: #FFF;
+    transition: all .3s;
+}
+
+.top__button:hover {
+    background: #EB443F;
 }
 
 .game-box {
@@ -90,6 +95,10 @@ button {
     border-radius: 16px;
 }
 
+.game__img:hover {
+    border: 3px solid #44D2FF;
+}
+
 .game__heading {
     position: absolute;
     font-size: 24px;
@@ -100,4 +109,51 @@ button {
     bottom: 0;
     margin-left: 32px;
     margin-bottom: 32px;
+}
+
+
+/* Адаптивная версия */
+
+@media (max-width: 767px) {
+    .center {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .top {
+        height: 735px;
+    }
+
+    .top__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .title {
+        font-size: 32px;
+        text-align: center;
+        padding-top: 238px;
+    }
+
+    .top__text {
+        font-size: 14px;
+        line-height: 22px;
+        text-align: center;
+        padding-bottom: 32px;
+    }
+
+    .game-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .game {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .game__heading {
+        margin-left: 16px;
+    }
 }
