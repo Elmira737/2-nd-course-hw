@@ -61,6 +61,11 @@ button {
     font-weight: 400;
     line-height: normal;
     color: #FFF;
+    transition: all .3s;
+}
+
+.top__button:hover {
+    background: #EB443F;
 }
 
 .game-box {
@@ -88,6 +93,10 @@ button {
 
 .game__img {
     border-radius: 16px;
+}
+
+.game__img:hover {
+    border: 3px solid #44D2FF;
 }
 
 .game__heading {
