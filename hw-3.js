@@ -19,3 +19,12 @@ while (f < 23) {
     f++;
 }
 
+let obj = {
+    'Коля': '200',
+    'Вася': '300',
+    'Петя': '400',
+};
+
+for (let salary in obj) {
+    console.log(`${salary} - зарплата ${obj[salary]} долларов`);
+}
