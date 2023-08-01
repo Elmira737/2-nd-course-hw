@@ -1,11 +1,30 @@
 function min(a, b) {
 
-if (a <b ) {
-return a;
-} else {
-return b;
-}
+    if (a < b) {
+        return a;
+    } else {
+        return b;
+    }
 }
 
-console.log(min(8,4));
-console.log(min(6,6));
+min(8, 4);
+
+"use strict";
+let n = prompt("Введите число!");
+let printAnswer;
+
+if (n % 2 == 0) {
+    printAnswer = function () {
+        console.log("Число четное");
+    }
+
+} else {
+
+    printAnswer = function () {
+        console.log("Число нечетное");
+    }
+
+}
+
+printAnswer();
+
