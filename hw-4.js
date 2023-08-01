@@ -28,3 +28,17 @@ if (n % 2 == 0) {
 
 printAnswer();
 
+function calc(a) {
+    let square = a * a;
+    console.log(square);
+}
+
+calc(7);
+
+function calc(b) {
+    return b * b;
+}
+
+let resalt = calc(10);
+
+console.log(resalt);
