@@ -42,3 +42,22 @@ function calc(b) {
 let resalt = calc(10);
 
 console.log(resalt);
+
+let age = prompt("Сколько вам лет?");
+let printMessage;
+
+if (age < 0) {
+    printMessage = function () {
+        console.log('Вы ввели неправильное значение');
+    }
+} else if (age >= 13) {
+    printMessage = function () {
+        console.log('Добро пожаловать!');
+    }
+} else {
+    printMessage = function () {
+        console.log('Привет, друг!');
+    }
+}
+
+printMessage();
