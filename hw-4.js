@@ -61,3 +61,12 @@ if (age < 0) {
 }
 
 printMessage();
+
+function num(a, b) {
+    if (isNaN(a) || isNaN(b)) {
+        return 'Одно или оба значения не являются числом';
+    } else {
+        return Number(a) * Number(b);
+    }
+}
+
