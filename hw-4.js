@@ -70,3 +70,14 @@ function num(a, b) {
     }
 }
 
+function inputValue() {
+    let userAnswer = prompt("Введите число")
+    if (isNaN(userAnswer)) {
+        return 'Переданный параметр не является числом';
+    }
+
+    let cube = userAnswer ** 3
+    return `${userAnswer} в кубе равняется ${cube}`;
+}
+
+console.log(inputValue());
