@@ -51,25 +51,30 @@
         </div>
     </section>
     <script>
-        const getSeason = (numMonth) => {
+        let userAnswer = getSeason(prompt("Answer"));
+        function getSeason(numMonth) {
             if (isNaN(numMonth)) {
+                console.log('Указанное значение не является числом!');
                 return 'Указанное значение не является числом!';
             }
-            if (numMonth === 12 || (numMonth >= 1 && numMonth <= 2)) {
-                season = 'Зима';
+
+            if (numMonth == 12 || (numMonth >= 1 && numMonth <= 2)) {
+                console.log('Зима');
+                return 'Зима';
             } else if (numMonth >= 3 && numMonth <= 5) {
-                season = 'Весна';
+                console.log('Весна');
+                return 'Весна';
             } else if (numMonth >= 6 && numMonth <= 8) {
-                season = 'Лето';
+                console.log('Лето');
+                return 'Лето';
             } else if (numMonth >= 9 && numMonth <= 11) {
-                season = 'Осень';
+                console.log('Осень');
+                return 'Осень';
             } else {
+                console.log('Такого месяца не существует!');
                 return 'Такого месяца не существует!';
             }
-            return season;
         }
-
-        console.log(getSeason(3));
     </script>
 </body>
 
