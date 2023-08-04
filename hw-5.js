@@ -12,3 +12,14 @@ console.log(index);
 let array = [1, 3, 5, 10, 20];
 array = array.join(' ');
 console.log(array);
+
+let block = [];
+
+for (let i = 0; i < 3; i++) {
+    block[i] = [];
+    for (let j = 0; j < 3; j++) {
+        block[i].push(1);
+    }
+}
+
+console.log(block);
