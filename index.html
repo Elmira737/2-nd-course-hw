@@ -44,37 +44,32 @@
             <h2 class="info__title">Времена года!</h2>
             <p class="info__text">Нажмите кнопку играть, введите номер месяца (от 1 до 12) и вы узнаете к какому времени
                 года он относится</p>
-            <button class="info__button" type="button">Играть!</button>
+            <button onclick="getSeason()" class="info__button" type="button">Играть!</button>
         </div>
         <div class="info__imges">
             <img class="info__img" src="img/back2.png" alt="photo">
         </div>
     </section>
     <script>
-        let userAnswer = getSeason(prompt("Введите число"));
-        function getSeason(numMonth) {
-            if (isNaN(numMonth)) {
-                console.log('Указанное значение не является числом!');
-                return 'Указанное значение не является числом!';
+        function getSeason() {
+            const month = parseInt(prompt("Введите номер месяца (от 1 до 12):"));
+            if (isNaN(month) || month < 1 || month > 12) {
+                alert("Неправильный номер месяца!");
+                return;
             }
-
-            if (numMonth == 12 || (numMonth >= 1 && numMonth <= 2)) {
-                console.log('Зима');
-                return 'Зима';
-            } else if (numMonth >= 3 && numMonth <= 5) {
-                console.log('Весна');
-                return 'Весна';
-            } else if (numMonth >= 6 && numMonth <= 8) {
-                console.log('Лето');
-                return 'Лето';
-            } else if (numMonth >= 9 && numMonth <= 11) {
-                console.log('Осень');
-                return 'Осень';
+            let season;
+            if (month === 12 || month === 1 || month === 2) {
+                season = "Зима";
+            } else if (month >= 3 && month <= 5) {
+                season = "Весна";
+            } else if (month >= 6 && month <= 8) {
+                season = "Лето";
             } else {
-                console.log('Такого месяца не существует!');
-                return 'Такого месяца не существует!';
+                season = "Осень";
             }
+            alert(`Время года: ${season}`);
         }
+        getSeason()
     </script>
 </body>
 
