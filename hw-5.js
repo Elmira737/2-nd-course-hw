@@ -48,3 +48,7 @@ word = word.reverse();
 word = word.join('');
 console.log(word);
 
+let newArray = [[1, 2, 3,],[4, 5, 6]];
+let result = [].concat(...newArray);
+console.log(result);
+
