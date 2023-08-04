@@ -69,4 +69,11 @@ function getLengthWords(arr) {
 
 let words = ['hello', 'world', '', 'you are welcome', 'to be a nice person'];
 let lengthWords = getLengthWords(words);
-console.log(lengthWords); 
+console.log(lengthWords);
+
+function filterPositive(array) {
+    return array.filter(num => num < 0);
+}
+
+console.log(filterPositive([-1, 0, 5, -10, 56]));
+console.log(filterPositive([-25, 25, 0, -1000, -2]));
