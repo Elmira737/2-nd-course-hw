@@ -48,7 +48,13 @@ word = word.reverse();
 word = word.join('');
 console.log(word);
 
-let newArray = [[1, 2, 3,],[4, 5, 6]];
+let newArray = [[1, 2, 3,], [4, 5, 6]];
 let result = [].concat(...newArray);
 console.log(result);
 
+let newArr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+for (let i = 0; i < newArr.length - 1; i++) {
+    let sum = newArr[i] + newArr[i + 1];
+    console.log(sum);
+}
