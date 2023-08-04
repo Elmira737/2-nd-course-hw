@@ -58,3 +58,7 @@ for (let i = 0; i < newArr.length - 1; i++) {
     let sum = newArr[i] + newArr[i + 1];
     console.log(sum);
 }
+
+const numb = [3, 5, 7, 9, 11];
+let newResult = numb.map(item => (item ** 2));
+console.log(newResult);
