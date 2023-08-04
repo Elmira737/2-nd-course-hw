@@ -27,3 +27,9 @@ console.log(block);
 let number = [1, 1, 1];
 number.push(2, 2, 2);
 console.log(number);
+
+let numbers = [9, 8, 7, 'a', 6, 5];
+numbers = numbers.filter(item => typeof item === 'number');
+numbers = numbers.sort();
+console.log(numbers);
+
