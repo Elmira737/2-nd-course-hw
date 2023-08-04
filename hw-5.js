@@ -62,3 +62,11 @@ for (let i = 0; i < newArr.length - 1; i++) {
 const numb = [3, 5, 7, 9, 11];
 let newResult = numb.map(item => (item ** 2));
 console.log(newResult);
+
+function getLengthWords(arr) {
+    return arr.map(word => word.length);
+}
+
+let words = ['hello', 'world', '', 'you are welcome', 'to be a nice person'];
+let lengthWords = getLengthWords(words);
+console.log(lengthWords); 
