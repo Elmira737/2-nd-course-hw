@@ -33,3 +33,11 @@ numbers = numbers.filter(item => typeof item === 'number');
 numbers = numbers.sort();
 console.log(numbers);
 
+let num = [9, 8, 7, 6, 5];
+let userAnswer = prompt('Угадайте число');
+
+if (num.includes(userAnswer)) {
+    alert('Угадал');
+} else {
+    alert('Не угадал');
+} 
