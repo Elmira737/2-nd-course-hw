@@ -40,4 +40,11 @@ if (num.includes(userAnswer)) {
     alert('Угадал');
 } else {
     alert('Не угадал');
-} 
+}
+
+let word = 'abcdef';
+word = word.split('');
+word = word.reverse();
+word = word.join('');
+console.log(word);
+
