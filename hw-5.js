@@ -23,3 +23,7 @@ for (let i = 0; i < 3; i++) {
 }
 
 console.log(block);
+
+let number = [1, 1, 1];
+number.push(2, 2, 2);
+console.log(number);
