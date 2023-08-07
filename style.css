@@ -111,6 +111,54 @@ button {
     margin-bottom: 32px;
 }
 
+.info {
+    background: #000915;
+    display: flex;
+    align-items: center;
+}
+
+.info__item {
+    padding-right: 135px;
+    padding-top: 282px;
+    padding-bottom: 282px;
+}
+
+.info__title {
+    color: #FFF;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding-bottom: 32px;
+}
+
+.info__text {
+    color: #FFF;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 32px;
+    padding-bottom: 32px;
+}
+
+.info__button {
+    background: #9C0332;
+    border: none;
+    border-radius: 30px;
+    box-sizing: border-box;
+    width: 234px;
+    height: 48px;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: #FFF;
+    transition: all .3s;
+}
+
+.info__button:hover {
+    background: #EB443F;
+}
 
 /* Адаптивная версия */
 
@@ -153,7 +201,40 @@ button {
         grid-template-columns: repeat(4, 1fr);
     }
 
+    .game__img {
+        width: 100%;
+    }
+
     .game__heading {
         margin-left: 16px;
+    }
+
+    .info {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .info__item {
+        padding-right: 0;
+        text-align: center;
+        padding-top: 51px;
+        padding-bottom: 64px;
+    }
+
+    .info__title {
+        font-size: 32px;
+    }
+
+    .info__text {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    .info__imges {
+        padding-bottom: 85px;
+    }
+
+    .info__img {
+        width: 100%;
     }
 }

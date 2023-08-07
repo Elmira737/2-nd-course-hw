@@ -39,7 +39,37 @@
             </div>
         </div>
     </section>
-    <section></section>
+    <section class="info center">
+        <div class="info__item">
+            <h2 class="info__title">Времена года!</h2>
+            <p class="info__text">Нажмите кнопку играть, введите номер месяца (от 1 до 12) и вы узнаете к какому времени
+                года он относится</p>
+            <button onclick="getSeason()" class="info__button" type="button">Играть!</button>
+        </div>
+        <div class="info__imges">
+            <img class="info__img" src="img/back2.png" alt="photo">
+        </div>
+    </section>
+    <script>
+        function getSeason() {
+            const month = parseInt(prompt("Введите номер месяца (от 1 до 12):"));
+            if (isNaN(month) || month < 1 || month > 12) {
+                alert("Неправильный номер месяца!");
+                return;
+            }
+            let season;
+            if (month === 12 || month === 1 || month === 2) {
+                season = "Зима";
+            } else if (month >= 3 && month <= 5) {
+                season = "Весна";
+            } else if (month >= 6 && month <= 8) {
+                season = "Лето";
+            } else {
+                season = "Осень";
+            }
+            alert(`Время года: ${season}`);
+        }
+    </script>
 </body>
 
 </html>
