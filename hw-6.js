@@ -56,3 +56,6 @@ function getRandomInt(min, max) {
 }
 
 console.log(getRandomInt(17, 3));
+
+let currentDate = new Date();
+console.log(currentDate);
