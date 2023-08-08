@@ -2,18 +2,18 @@ let str = 'js';
 str = str.toUpperCase();
 console.log(str.toUpperCase());
 
-const arr = ['Правило', 'План', 'Производство', 'Профиль', 'Перевод']; 
+const arr = ['Правило', 'План', 'Производство', 'Профиль', 'Перевод'];
 const search = 'про';
 
 arr.forEach((arr) => {
-if (arr.toLowerCase().startsWith(search.toLowerCase())) {
-console.log(arr);
-}
+    if (arr.toLowerCase().startsWith(search.toLowerCase())) {
+        console.log(arr);
+    }
 });
 
 let number = 32.58884;
 let roundedDown = Math.floor(number);
-console.log(roundedDown); 
+console.log(roundedDown);
 
 let numb = 32.58884;
 let roundedUp = Math.ceil(numb);
@@ -30,3 +30,11 @@ let maxNumber = Math.max(...numbers);
 
 console.log(minNumber);
 console.log(maxNumber);
+
+function getRandomNumber() {
+    let randomNumber = Math.floor(Math.random() * 10) + 1;
+    console.log(randomNumber);
+}
+
+getRandomNumber();
+
