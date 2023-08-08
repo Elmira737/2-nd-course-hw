@@ -57,5 +57,13 @@ function getRandomInt(min, max) {
 
 console.log(getRandomInt(17, 3));
 
+let today = new Date();
+console.log(today);
+
 let currentDate = new Date();
-console.log(currentDate);
+let futureDate = new Date();
+
+futureDate.setDate(currentDate.getDate() + 73);
+
+console.log(futureDate);
+
