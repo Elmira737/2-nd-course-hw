@@ -23,3 +23,10 @@ let num = 32.58884;
 let rounded = Math.round(num);
 console.log(rounded);
 
+let numbers = [52, 53, 49, 77, 21, 32];
+
+let minNumber = Math.min(...numbers);
+let maxNumber = Math.max(...numbers);
+
+console.log(minNumber);
+console.log(maxNumber);
