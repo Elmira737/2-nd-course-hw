@@ -41,12 +41,18 @@ getRandomNumber();
 function getRandomArrNumbers(number) {
     let array = [];
     let length = Math.floor(number / 2);
-    
+
     for (let i = 0; i < length; i++) {
-    array.push(Math.floor(Math.random() * (number + 1)));
+        array.push(Math.floor(Math.random() * (number + 1)));
     }
     return array;
-    }
-    
-    let result = getRandomArrNumbers(11);
-    console.log(result);
+}
+
+let result = getRandomArrNumbers(11);
+console.log(result);
+
+function getRandomInt(min, max) {
+    return Math.round(Math.random() * (max - min)) + min;
+}
+
+console.log(getRandomInt(17, 3));
