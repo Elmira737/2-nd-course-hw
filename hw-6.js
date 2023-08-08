@@ -38,3 +38,15 @@ function getRandomNumber() {
 
 getRandomNumber();
 
+function getRandomArrNumbers(number) {
+    let array = [];
+    let length = Math.floor(number / 2);
+    
+    for (let i = 0; i < length; i++) {
+    array.push(Math.floor(Math.random() * (number + 1)));
+    }
+    return array;
+    }
+    
+    let result = getRandomArrNumbers(11);
+    console.log(result);
