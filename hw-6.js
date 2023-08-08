@@ -67,3 +67,19 @@ futureDate.setDate(currentDate.getDate() + 73);
 
 console.log(futureDate);
 
+function formatDate() {
+    const days = ["воскресенье", "понедельник", "вторник", "среда", "четверг", "пятница", "суббота"];
+    const months = ["Январь", "Февраль", "Март", "Апрель", "Май", "Июнь",
+        "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"];
+
+    let fullDate = "Дата: " + myDate.getDate() + " " + months[myDate.getMonth()] +
+        " " + myDate.getFullYear() + " - это " + days[myDate.getDay()] + ". Время: " + myDate.getHours() + ":" + myDate.getMinutes() + ":" + myDate.getSeconds();
+
+    return fullDate;
+}
+
+
+let myDate = new Date();
+let fullDate = formatDate(myDate);
+
+console.log(fullDate);
