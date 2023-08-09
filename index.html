@@ -56,8 +56,9 @@
         </div>
         <div class="info__box">
             <h2 class="info__title">Запомни слова</h2>
-            <p class="info__text">При нажатии на кнопку играть, вы увидите несколько слов, которые вам необходимо запомнить.</p>
-            <button onclick="getSeason()" class="info__button" type="button">Играть</button>
+            <p class="info__text">При нажатии на кнопку играть, вы увидите несколько слов, которые вам необходимо
+                запомнить.</p>
+            <button onclick="guessFruits()" class="info__button" type="button">Играть</button>
         </div>
     </section>
     <script>
@@ -78,6 +79,25 @@
                 season = "Осень";
             }
             alert(`Время года: ${season}`);
+        }
+        function guessFruits() {
+            let fruits = ['Яблоко', 'Груша', 'Дыня', 'Виноград', 'Персик', 'Апельсин', 'Мандарин'];
+            fruits = fruits.sort(() => Math.random() - 0.5);
+            alert(fruits);
+
+            let firstFruit = prompt("Какой фрукт был первым?");
+            let lastFruit = prompt("Какой фрукт был последним?");
+
+            firstFruit = firstFruit.toLowerCase();
+            lastFruit = lastFruit.toLowerCase();
+
+            if (firstFruit === fruits[0].toLowerCase() && lastFruit === fruits[fruits.length - 1].toLowerCase()) {
+                alert("Поздравляем! Вы угадали оба фрукта.");
+            } else if (firstFruit === fruits[0].toLowerCase() || lastFruit === fruits[fruits.length - 1].toLowerCase()) {
+                alert("Вы были близки к победе!");
+            } else {
+                alert("Вы ответили неверно.");
+            }
         }
     </script>
 </body>
