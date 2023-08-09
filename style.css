@@ -160,6 +160,16 @@ button {
     background: #EB443F;
 }
 
+.info__content {
+    padding-right: 135px;
+}
+
+.info__box {
+    padding-top: 282px;
+    padding-bottom: 282px;
+}
+
+
 /* Адаптивная версия */
 
 @media (max-width: 767px) {
@@ -221,6 +231,13 @@ button {
         padding-bottom: 64px;
     }
 
+    .info__box {
+        padding-right: 0;
+        text-align: center;
+        padding-top: 51px;
+        padding-bottom: 64px;
+    }
+
     .info__title {
         font-size: 32px;
     }
@@ -231,6 +248,13 @@ button {
     }
 
     .info__imges {
+        padding-bottom: 85px;
+    }
+
+    .info__content {
+        display: flex;
+        order: 2;
+        padding-right: 0;
         padding-bottom: 85px;
     }
 
