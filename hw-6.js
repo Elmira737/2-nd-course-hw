@@ -67,7 +67,7 @@ futureDate.setDate(currentDate.getDate() + 73);
 
 console.log(futureDate);
 
-function formatDate() {
+function formatDate(myDate) {
     const days = ["воскресенье", "понедельник", "вторник", "среда", "четверг", "пятница", "суббота"];
     const months = ["Январь", "Февраль", "Март", "Апрель", "Май", "Июнь",
         "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"];
