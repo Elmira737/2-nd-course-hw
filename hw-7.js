@@ -35,3 +35,19 @@ const users = [
 
 console.log(filter(users, isMale));
 
+function printCurrentDate() {
+    const currentDate = new Date();
+    console.log(currentDate);
+}
+
+let counter = 0;
+
+const interval = setInterval(() => {
+    printCurrentDate();
+    counter += 3;
+
+    if (counter >= 30) {
+        clearInterval(interval);
+        console.log('30 секунд прошло');
+    }
+}, 3000);
